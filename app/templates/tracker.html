@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Tracker{% endblock %}
+{% block content %}
+<h1>Water Tracker</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.amount.label }} {{ form.amount(size=10) }}<br>
+    {{ form.submit() }}
+</form>
+<h2>Your Entries:</h2>
+<ul>
+    {% for entry in entries %}
+        <li>{{ entry.amount }} ml - {{ entry.date_posted.strftime('%Y-%m-%d') }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

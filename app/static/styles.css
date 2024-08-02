@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.flash {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.flash.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flash.danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
