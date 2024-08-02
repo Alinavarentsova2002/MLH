@@ -20,9 +20,12 @@ A simple web application built with Flask that allows users to track their daily
     source venv/bin/activate
 
 3. Install the required packages:
+ and initialize the databasepython init_db.py
     pip install -r requirements.txt
+   pip install email_validator
+   pip install --upgrade watchdog
 
-4. Run the application:
+6. Run the application:
     python run.py
 
 ## Technologies Used
